@@ -60,7 +60,11 @@ def main():
         print(f"   * Output Directory:     {os.path.abspath(args.output_dir)}")
         print("==================================================")
         for r in results:
+<<<<<<< HEAD
             if r["status"] == "successed":
+=======
+            if r["status"] == "successful":
+>>>>>>> feature/config-update
                 print(f"  + {r['filename']} -> MD & JSON ({r['word_count']} words)")
             else:
                 print(f"  - {r['file']} -> {r['error']}")
