@@ -1,6 +1,6 @@
 # Unstructured File to Markdown & JSON Converter
 
-A python project and web application that ingests unstructured files (PDF, Word DOCX, HTML, TXT, CSV, TSV, Images) and converts them into standardized `.md` (Markdown) and `.json` (Structured JSON AST) files.
+A python project and web development that ingests unstructured files (PDF, Word DOCX, HTML, TXT, CSV, TSV, Images) and converts them into standardized `.md` (Markdown) and `.json` (Structured JSON AST) files.
 
 ---
 
