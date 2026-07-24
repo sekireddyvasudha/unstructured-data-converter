@@ -1,0 +1,5 @@
+ID,ProjectName,Status,Owner,BudgetUSD
+101,Unstructured Converter,Active,Vasudha,15000
+102,Clinical Trials Ingestion,Completed,Data Team,45000
+103,AI Search Subagent,In Progress,Engineering,28000
+104,Customer Portal V2,Planning,Product Team,32000

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unstructured File Converter | MD & JSON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Marked.js for rendered markdown view -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="navbar">
+            <div class="brand">
+                <div class="logo-icon">⚡</div>
+                <div>
+                    <h1>Unstructured Converter</h1>
+                    <p class="subtitle">Convert PDF, DOCX, HTML, TXT, CSV & Images into clean Markdown & Structured JSON</p>
+                </div>
+            </div>
+            <div class="badge">v1.0.0</div>
+        </header>
+
+        <!-- Main Workspace -->
+        <main class="workspace">
+            <!-- Upload & Input Panel -->
+            <section class="panel upload-panel">
+                <h2>Upload Document</h2>
+                <div class="drop-zone" id="dropZone">
+                    <div class="upload-icon">📁</div>
+                    <h3>Drag & Drop files here</h3>
+                    <p>or click to browse from your computer</p>
+                    <input type="file" id="fileInput" accept=".pdf,.docx,.doc,.html,.htm,.txt,.csv,.tsv,.json,.yaml,.yml,.png,.jpg,.jpeg,.bmp,.webp">
+                    <div class="supported-tags">
+                        <span class="tag">PDF</span>
+                        <span class="tag">DOCX</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">TXT</span>
+                        <span class="tag">CSV</span>
+                        <span class="tag">Images</span>
+                    </div>
+                </div>
+
+                <div class="file-info-card hidden" id="fileInfoCard">
+                    <div class="file-details">
+                        <span class="file-icon">📄</span>
+                        <div>
+                            <div class="file-name" id="fileName">document.pdf</div>
+                            <div class="file-size" id="fileSize">0 KB</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="convertBtn">
+                        <span id="btnText">Convert File</span>
+                        <div class="spinner hidden" id="btnSpinner"></div>
+                    </button>
+                </div>
+
+                <!-- Document Stats Summary -->
+                <div class="stats-card hidden" id="statsCard">
+                    <h3>Document Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">File Type</span>
+                            <span class="stat-value" id="statType">-</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Words</span>
+                            <span class="stat-value" id="statWords">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Characters</span>
+                            <span class="stat-value" id="statChars">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Lines</span>
+                            <span class="stat-value" id="statLines">0</span>
+                        </div>
+                    </div>
+
+                    <div class="download-actions">
+                        <a id="downloadMdBtn" class="btn btn-secondary" download>
+                            ⬇ Download .MD
+                        </a>
+                        <a id="downloadJsonBtn" class="btn btn-secondary" download>
+                            ⬇ Download .JSON
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Preview & Output Panel -->
+            <section class="panel preview-panel">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="renderedMd">Markdown Rendered</button>
+                    <button class="tab-btn" data-tab="rawMd">Markdown Source</button>
+                    <button class="tab-btn" data-tab="jsonAst">JSON AST View</button>
+                </div>
+
+                <div class="tab-content active" id="renderedMd">
+                    <div class="placeholder-state" id="placeholderState">
+                        <div class="placeholder-icon">🔍</div>
+                        <p>Upload a file to see converted Markdown preview here</p>
+                    </div>
+                    <div class="markdown-body hidden" id="mdRenderedContent"></div>
+                </div>
+
+                <div class="tab-content" id="rawMd">
+                    <pre><code class="language-markdown" id="rawMdContent">Select a file and convert to view raw Markdown...</code></pre>
+                </div>
+
+                <div class="tab-content" id="jsonAst">
+                    <pre><code class="language-json" id="jsonAstContent">Select a file and convert to view JSON AST structure...</code></pre>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Q3 Financial & Operations Summary Report
+
+## Executive Summary
+This document outlines key performance indicators, revenue growth, and operational milestones achieved during the third quarter of 2026.
+
+## Highlights
+- Total revenue increased by 28% year-over-year.
+- Customer satisfaction rating reached 94.6%.
+- Expansion into 3 new regional hubs completed successfully.
+
+## Department Updates
+### Engineering & Product
+The team delivered 4 major releases including the automated unstructured file ingestion pipeline.
+
+### Sales & Operations
+Customer retention improved across enterprise accounts with 12 new enterprise signups.

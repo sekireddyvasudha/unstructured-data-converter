@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "filename": "sample_webpage.html",
+    "file_type": "HTML",
+    "file_size_bytes": 953,
+    "created_at": "2026-07-24T05:18:32.260773+00:00",
+    "char_count": 451,
+    "word_count": 62,
+    "line_count": 17,
+    "extra": {}
+  },
+  "title": "Product Documentation - Unstructured Parser",
+  "summary": null,
+  "sections": [
+    {
+      "title": "Unstructured File Converter Guide",
+      "level": 1,
+      "content": "",
+      "subsections": [],
+      "tables": [],
+      "metadata": {}
+    },
+    {
+      "title": "Key Capabilities",
+      "level": 2,
+      "content": "",
+      "subsections": [],
+      "tables": [],
+      "metadata": {}
+    },
+    {
+      "title": "System Requirements",
+      "level": 2,
+      "content": "",
+      "subsections": [],
+      "tables": [],
+      "metadata": {}
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Component",
+        "Requirement",
+        "Recommended"
+      ],
+      "rows": [
+        [
+          "Python",
+          "Python 3.9+",
+          "Python 3.11+"
+        ],
+        [
+          "RAM",
+          "2 GB",
+          "4 GB+"
+        ]
+      ],
+      "caption": "Table 1"
+    }
+  ],
+  "raw_text": "Product Documentation - Unstructured Parser\nUnstructured File Converter Guide\nWelcome to the official developer documentation for the Unstructured File Converter service.\nKey Capabilities\nConverts PDF, Word, HTML, Text, and tabular files into clean Markdown.\nGenerates a comprehensive JSON AST document schema.\nSupports CLI and FastAPI web endpoints.\nSystem Requirements\nComponent\nRequirement\nRecommended\nPython\nPython 3.9+\nPython 3.11+\nRAM\n2 GB\n4 GB+",
+  "unstructured_elements": []
+}
